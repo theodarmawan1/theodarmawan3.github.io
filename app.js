@@ -28,7 +28,7 @@ let tl = anime.timeline({})
         if (window.innerWidth <= 503) {
             gedung.add({
             targets: ".gedung1",
-            bottom: "-27%",
+            bottom: "20%",
             duration: 4500,
             easing: 'easeInOutSine'
             })
