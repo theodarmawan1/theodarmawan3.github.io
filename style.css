@@ -1,0 +1,1572 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@400;500;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@font-face {
+    font-family: starwar;
+    src: url(./font/starjedi/Starjedi.ttf);
+}
+
+@font-face {
+    font-family: starwar2;
+    src: url(./font/starjout/Starjout.ttf);
+}
+
+@font-face {
+    font-family: elianto;
+    src: url(./font/Elianto-Regular.ttf);
+}
+
+@font-face {
+    font-family: eras;
+    src: url(./font/ErasBoldITC.ttf);
+}
+
+:root {
+    --main-color: rgb(255, 149, 0);
+    --second-color: rgb(239, 231, 0);
+    --bg-color: rgb(3, 0, 35);
+    --ijo: #bbff00;
+}
+
+
+*, *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Bebas Neue', cursive;
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stars1 {
+    position: absolute;
+    left: -30%;
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -2;
+}
+
+.stars2 {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -3;
+}
+
+.stars3 {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -4;
+}
+
+.layer1 {
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.layer2 {
+    position: absolute;
+    left: 100%;
+    bottom: -100%;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.square1{
+    position: absolute;
+    width: 50vw;
+    rotate: 180deg;
+    bottom: -300%;
+    z-index: 0;
+}
+
+.gedung1 {
+    position: absolute;
+    width: 50%;
+    bottom: -300%;
+    transform: translateY(0%);
+}
+
+.intro {
+    background-color: var(--bg-color);
+    height: 160vh;
+}
+
+.intro .subtitle {
+    color: white;
+    position: absolute;
+    top: -100%;
+    font-size: 3.3rem;
+    letter-spacing: 1.7rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    transform: translateY(0%);
+}
+
+section .title {
+    position: relative;
+    font-size: 10.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    top: -35%;
+}
+
+.intro h1 span {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, var(--ijo), var(--ijo),  
+    #565656); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.page1 {
+    margin-top: 14rem;
+    background-color: var(--bg-color);
+}
+
+.layer3 {
+    position: absolute;
+    width: 70%;
+    bottom: -50%;
+    right: -30%;
+}
+
+.layer4 {
+    position: absolute;
+    width: 70%;
+    left: -30%;
+    top: -50%;
+}
+
+.robot {
+    position: absolute;
+    width: 35%;
+    z-index: 1;
+    transform: translateY(0%);
+    filter: drop-shadow(6px 6px 6px rgba(187, 255,0, 0.8));
+}
+
+.page1-title {
+    font-size: 20vw;
+    background: linear-gradient(to top, #ffffff, 
+    var(--ijo)); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1rem;
+    position: absolute;
+    z-index: 0;
+    transform: translateY(0%);
+}
+
+.text-fixed {
+    font-size: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 3%;
+    color: #7752FE;
+}
+
+.page1-artikel {
+    position: absolute;
+    font-size: 1.3rem;
+    color: var(--ijo);
+    width: 40%;
+    text-align: left;
+    bottom: 2rem;
+    left: 3%;
+    font-family: monospace;
+    font-weight: 100;
+    transform: translate(0%);
+}
+
+.page1-quote {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    font-size: 2rem;
+    width: 30%;
+    text-align: right;
+    font-family: 'Edu TAS Beginner', cursive;;
+    color: #ffffff;
+    font-weight: 600;
+    transform: translate(0%);
+}
+
+.bg1 {
+    width: 55%;
+    position: absolute;
+    left: -13%;
+    transform: translateY(0%);
+}
+
+.bg2 {
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    transform: translateY(0%);
+}
+
+.bg3{
+    width: 52%;
+    position: absolute;
+    right: -13%;
+    z-index: 5;
+    transform: translateY(0%);
+}
+
+.tujuan1 {
+    position: absolute;
+    width: 35%;
+    left: 6%;
+    z-index: 1;
+}
+
+.tujuan2 {
+    position: absolute;
+    width: 42%;
+    z-index: 4;
+    right: 22%;
+    top: 3%;
+    z-index: 4;
+
+}
+
+.tujuan3 {
+    position: absolute;
+    width: 45%;
+    right: -10%;
+    top: 3%;
+    z-index: 6;
+}
+
+.page2 .text-tujuan1 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    left: 3%;
+}
+
+.page2 .text-tujuan2 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    left: 35%;
+}
+
+.page2 .text-tujuan3 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    right: 26%;
+}
+
+.page3 {
+    background: var(--bg-color);
+    z-index: -1;
+    margin-bottom: 16rem;
+    overflow: visible;
+}
+
+.layer5 {
+    position: absolute;
+    width: 70%;
+    top: -50%;
+    right: -30%;
+    rotate: -100deg;
+}
+
+.layer6 {
+    position: absolute;
+    width: 70%;
+    left: -30%;
+    bottom: -50%;
+    rotate: -100deg;
+    z-index: 2;
+}
+
+.square2 {
+    position: absolute;
+    width: 65%;
+    bottom: -50%;
+    left: -12%;
+}
+
+.gedung2 {
+    position: absolute;
+    width: 60%;
+    height: 85vh;
+    bottom: -12%;
+    left: -10%;
+    z-index: 1;
+    filter: brightness(0.8);
+    transform: translateY(0%);
+    filter: drop-shadow(10px 10px 5px rgba(187, 255,0, 1));
+}
+
+.petugas1 {
+    position: absolute;
+    width: 30%;
+    bottom: -5%;
+    z-index: 3;
+    left: 30%;
+    filter: brightness(0.7);
+    transform: translate(150%, 150%);
+}
+
+.page3-title {
+    font-size: 6rem;
+    background: linear-gradient(to bottom, var(--ijo), white); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 15%;
+    right: 1rem;
+    z-index: 1;
+    transform: translateY(0%);
+}
+
+.page3-artikel {
+    font-size: 2rem;
+    text-align: right;
+    color: white;
+    width: 40%;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    right: 2rem;
+    top: 34%;
+    transform: translate(0%);
+}
+
+.page3-quote {
+    position: absolute;
+    bottom: 7rem;
+    left: 4rem;
+    font-size: 2rem;
+    width: 50%;
+    text-align: left;
+    font-family: 'Edu TAS Beginner', cursive;;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    z-index: 5;
+    transform: translateY(0%);
+}
+
+.page4 {
+    background: var(--bg-color);
+    z-index: -1;
+    margin-top: 20rem;
+    position: relative;
+}
+
+
+.square3 {
+    width: 70%;
+    position: absolute;
+    bottom: -68%;
+    right: -15%;
+}
+
+.gedung3 {
+    width: 50%;
+    position: absolute;
+    bottom: -39%;
+    right: -4%;
+    transform: translate(0%);
+}
+
+.petugas2 {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    transform: translate(0%);
+}
+
+.petugas3 {
+    width: 36%;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    transform: translate(0%);
+}
+
+.page4-title1 {
+    color: white;
+    font-size: 3.4rem;
+    position: absolute;
+    left: 33%;
+    top: 17%;
+    font-weight: 600;
+    transform: translate(0%);
+}
+
+.page4-artikel1 {
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    left: 17%;
+    top: 30%;
+    font-family: "Poppins", sans-serif;
+    transform: translate(0%);
+}
+
+.page4-title2 {
+    color: white;
+    font-size: 3.4rem;
+    position: absolute;
+    left: 22%;
+    bottom: 33%;
+    transform: translate(0%);
+}
+
+.page4-artikel2 {
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    left: 11%;
+    bottom: 12%;
+    font-family: "Poppins", sans-serif;
+    transform: translate(0%);
+}
+
+.page5 {
+    background-color: var(--bg-color);
+    margin-bottom: 20rem;
+    z-index: -2;
+    overflow: visible;
+}
+
+.ring1 {
+    width: 120%;
+    position: absolute;
+    bottom: -30%;
+    opacity: 0.6;
+    transform: translateY(0%);
+}
+
+.ring2 {
+    width: 100%;
+    position: absolute;
+    bottom: -17%;
+    opacity: 0.8;
+    transform: translateY(0%);
+}
+
+.ring3 {
+    width: 80%;
+    position: absolute;
+    bottom: -12%;
+    opacity: 0.9;
+    transform: translateY(0%);
+}
+
+.ring4 {
+    width:60%;
+    position: absolute;
+    bottom: -23%;
+    opacity: 0.8;
+    transform: translateY(0%);
+}
+
+.planet1 {
+    width: 8%;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    z-index: -1;
+}
+
+.planet2 {
+    width: 12%;
+    position: absolute;
+    top: 33%;
+    right: 30%;
+    z-index: -1;
+}
+
+.planet3 {
+    width: 15%;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    z-index: -1;
+}
+
+.planet4 {
+    width: 10%;
+    position: absolute;
+    bottom: -4%;
+    right: 30%;
+    z-index: -1;
+}
+
+.page5-title1 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    bottom: 39%;
+}
+
+.page5-title2 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    bottom: 18%;
+}
+
+.page5-title3 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 31%;
+}
+
+.page5-title4 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+}
+
+.page5-title5 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 17%;
+}
+
+.page5-title6 {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.page6 {
+    position: relative;
+    background: var(--bg-color);
+    z-index: -5;
+}
+
+.meteor1 {
+    width: 7%;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
+.meteor2 {
+    width: 12%;
+    position: absolute;
+    top: 14%;
+    right: 40%;
+}
+
+.meteor3 {
+    width: 5%;
+    position: absolute;
+    top: 26%;
+    left: 41%;
+}
+
+.meteor4 {
+    width: 4.5%;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+}
+
+.meteor5 {
+    width: 7%;
+    position: absolute;
+    bottom: 42%;
+    right: 39%;
+}
+
+.meteor6 {
+    width: 5.4%;
+    position: absolute;
+    bottom: 30%;
+    left: 47%;
+}
+
+.meteor7 {
+    width: 8.6%;
+    position: absolute;
+    bottom: 18%;
+    left: 53%;
+}
+
+.meteor8 {
+    width: 6%;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+}
+
+.meteor9 {
+    width: 11%;
+    position: absolute;
+    bottom: -10%;
+    left: 55%;
+}
+
+.page6-title {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 14rem;
+    transform: translateY(0%);
+    opacity: 1;
+    letter-spacing: -0.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    background: white;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: -1;
+}
+
+.page6-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--ijo);
+    font-weight: 100;
+    letter-spacing: 1.5rem;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    font-family: elianto;
+}
+
+.dashboard1 {
+    width: 45%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.dashboard2 {
+    width: 35%;
+    bottom: 10%;
+    left: 31%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard3 {
+    width: 38%;
+    bottom: 10%;
+    right: 29%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard4 {
+    width: 43%;
+    bottom: 6%;
+    left: 28%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.dashboard5 {
+    width: 43%;
+    bottom: 6%;
+    left: 28%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+}
+
+.dashboard6 {
+    width: 43%;
+    bottom: 6%;
+    left: 29%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard7 {
+    width: 43.4%;
+    bottom: 6%;
+    left: 29.1%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+}
+
+.page6-title2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 7rem;
+    font-family: eras;
+    font-weight: bolder;
+    background: white; 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: 2;
+}
+
+.page6-artikel1 {
+    position: absolute;
+    font-size: 1.4vw;
+    color: var(--ijo);
+    width: 90%;
+    text-align: center;
+    bottom: 3rem;
+    left: 6%;
+    font-family: monospace;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.ml1 {
+    width: 75%;
+    position: absolute;
+    bottom: -82%;
+    z-index: 3;
+    top: 24%;
+    filter: brightness(0.7);
+}
+
+.ml2 {
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    z-index: -1;
+}
+
+.ml3 {
+    width: 79%;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    z-index: -1;
+}
+
+.page6-title3 {
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    font-size: 7rem;
+    font-family: eras;
+    font-weight: bolder;
+    background: white; 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: 2;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.page6-artikel2 {
+    position: absolute;
+    font-size: 1.4vw;
+    color: var(--ijo);
+    width: 90%;
+    text-align: center;
+    bottom: 3rem;
+    left: 4%;
+    font-family: monospace;
+    font-weight: 100;
+    z-index: 3;
+    transform: translateY(0%);
+}
+
+
+.awan67{
+    position: absolute;
+    
+}
+
+.awan1 {
+    position: absolute;
+    bottom: 0%;
+    right: -22%;
+    z-index: 16;
+    width: 80%;
+}
+
+.awan2 {
+    position: absolute;
+    width: 85%;
+    bottom: -2%;
+    right: 25%;
+    z-index: 16;
+}
+
+.awan3 {
+    position: absolute;
+    width: 70%;
+    bottom: -43%;
+    left: -25%;
+    z-index: 16;
+}
+
+.awan4 {
+    position: absolute;
+    width: 68%;
+    bottom: -51%;
+    right: 10%;
+    z-index: 16;
+}
+
+.awan5 {
+    position: absolute;
+    width: 60%;
+    bottom: -54%;
+    right: -17%;
+    z-index: 16;
+}
+
+.awan6 {
+    position: absolute;
+    bottom: -54%;
+    right: -26%;
+    z-index: 16;
+    width: 80%;
+}
+
+.awan7 {
+    position: absolute;
+    width: 85%;
+    bottom: -67%;
+    right: 25%;
+    z-index: 16;
+}
+
+.awan3 img {
+    width: 80%;
+}
+
+.awan4 img {
+    width: 80%;
+}
+
+.awan5 img {
+    width: 80%;
+}
+
+@media screen and (max-width: 1200px){
+    section .title {
+        top: -35%;
+        font-size: 12vw;
+        left: -1%;
+    }
+    .page1 {
+        margin-top: -6rem; 
+    }
+    .page3-artikel {
+        font-size: 1.6rem;
+    }
+    .petugas2 {
+        width: 55%;
+    }
+    .page4-title1, .page4-title2 {
+        font-size: 3.1rem;
+    }
+    .page4-artikel1, .page4-artikel2 {
+        font-size: 1rem;
+    }
+    .page5-title3{
+        top: 37%;
+    }
+    .page5-title1 {
+        top: 55%;
+    }
+    .page5-title2{
+        bottom: 15%;
+    }
+    .page6-title {
+        left: 21%;
+        font-size: 18vw;
+    }
+    .page6-subtitle {
+        left: 26%;
+        font-size: 3vw;
+    }
+    .page6-title2 {
+        top: 6.7%;
+        left: 24.7%;
+        font-size: 8vw;
+    }
+    .ml1 {
+        width: 65%;
+        top: 32%;
+    }
+    .ml2 {
+        width: 74%;
+        top: 25%;
+    }
+    .ml3 {
+        top: 24%;
+    }
+    .page6-title3 {
+        top: 26%;
+        font-size: 8vw;
+        left: 15%;
+    }
+    .tujuan1 {
+        top: 11%;
+    }
+}
+
+@media screen and (max-width: 1135px){
+    .ring1 {
+        width: 130%;
+    }
+    .ring2 {
+        width: 105%;
+    }
+    .page5-title1 {
+        top: 58%;
+        font-size: 4vw;
+    }
+    .page5-title2 {
+        bottom: 12%;
+        font-size: 4vw;
+    }
+    .page5-title3, .page5-title4, .page5-title5, .page5-title6 {
+        font-size: 4vw;
+    }
+    .gedung2 {
+        bottom: -20%;
+    }
+    .page1 {
+        margin-top: -5rem; 
+    }
+    .square3 {
+        bottom: -43%;
+    }
+    .gedung3 {
+        bottom:  -18%;
+    }
+    .page4-title1, .page4-title2 {
+        font-size: 4vw;
+    }
+    .page4-artikel1, .page4-artikel2 {
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 1075px){
+    .ring1 {
+        width: 138%;
+    }
+    .ring2 {
+        width: 113%;
+    }
+    .gedung1 {
+        width: 60%;
+    }
+    .square1 {
+        width: 62vw;
+    }
+    .awan1 {
+        bottom: 9%;
+    }
+    .awan2 {
+        bottom: 0%;
+    }
+    .page3-artikel {
+        font-size: 2vw;
+    }
+    .page3-quote {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .ring1 {
+        width: 147%;
+    }
+    .ring2 {
+        width: 121%;
+    }
+    .ring3 {
+        width: 90%;
+    }
+    .ring4 {
+        width: 66%;
+    }
+    .page3-title {
+        font-size: 8vw;
+    }
+    .awan3 {
+        bottom: -18%; 
+    }
+    .awan4 {
+        bottom: -30%;
+    }
+    .awan5 {
+        bottom: -31%;
+    }
+    .gedung2 {
+        bottom: 5%
+    }
+    .page3-title {
+        font-size: 7vw;
+    }
+    .page3-artikel {
+        font-size: 2vw;
+    }
+    .page3-quote {
+        font-size: 0;
+    }
+    .page3 {
+        margin-bottom: 12rem;
+    }
+    .page4::before {
+        display: none;
+    }
+    .page4 {
+        margin-top: 4rem;
+    }
+    .page6-subtitle {
+        font-size: 3vw;
+        letter-spacing: 2vw;
+    }
+}
+
+@media screen and (max-width: 965px){
+    .ring1 {
+        width: 153%;
+    }
+    .ring2 {
+        width: 128%;
+    }
+    .ring3 {
+        width: 96%;
+    }
+    .ring4 {
+        width: 70%;
+    }
+    .bg2 {
+        width: 57%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #layer1 {
+        left: -100%;
+        bottom: -100%;
+        width: 100%;
+        height: 80vh;
+    }
+    #layer2 {
+        left: 100%;
+        bottom: -100%;
+        width: 100%;
+        height: 70vh;
+    }
+    #square1{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 905px){
+    .ring1 {
+        width: 163%;
+    }
+    .ring2 {
+        width: 138%;
+    }
+    .ring3 {
+        width: 100%;
+    }
+    .ring4 {
+        width: 72%;
+    }
+    .bg3 {
+        width: 60%;
+        right: -17%;
+    }
+}
+
+@media screen and (max-width: 867px){
+    .ring1 {
+        width: 170%;
+    }
+    .bg1 {
+        width: 57%;
+        left: -16%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .intro h4 {
+        font-size: 1.8rem;
+    }
+    section .title {
+        font-size: 6rem;
+    }
+    .bg1, .bg2, .bg3 {
+        width: 61%;
+    }
+    .square3 {
+        bottom: -23%;
+        width: 68%
+    }
+    
+    .gedung3 {
+        bottom: -4%;
+        width: 53%
+    }
+    .petugas2 {
+        width: 63%;
+        bottom: -8%;
+        right: 0%;
+    }
+    .petugas3 {
+        width: 41%;
+        bottom: -4%;
+        right: 0;
+    }
+    .page6-title {
+        left: 17%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .ring1 {
+        width: 178%;
+    }
+    .ring2 {
+        width: 148%;
+    }
+    .ring3 {
+        width: 110%;
+    }
+    .ring4 {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .ring1 {
+        width: 0%;
+    }
+    .ring2 {
+        width: 0%;
+    }
+    .ring3 {
+        width: 0%;
+    }
+    .ring4 {
+        width: 0%;
+    }
+    .stars1, .stars2, .stars3{
+        opacity: 1;
+    }
+    .gedung1 {
+        width: 70%;
+    }
+    .square1 {
+        width: 72vw;
+    }
+    .awan6 {
+        bottom: -48%;
+    }
+    .awan7 {
+        bottom: -54%;
+    }
+    .stars1 {
+        height: 170vh;
+    }
+    .stars2 {
+        height: 150vh;
+    }
+    .stars3 {
+        height: 135vh;
+    }
+    .page6 {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .page1-quote {
+        right: 2rem;
+    }
+    .page2 {
+        height: 70vh;
+    }
+    .page2 .text-tujuan1, .page2 .text-tujuan2, .page2 .text-tujuan3{
+        font-size: 15vw;
+    }
+    .gedung2{
+        width: 66%;
+        height: 64vh;
+        transform: translateY(-30%);
+    }
+    .awan3{
+        bottom: -2%;
+    }
+    .awan4, .awan5{
+        bottom: -9%;
+    }
+    .page4 {
+        margin-top: -9rem;
+    }
+    .page6 {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .gedung1 {
+        width: 80%;
+    }
+    .square1 {
+        width: 82vw;
+    }
+    .awan1 {
+        width: 100%;
+        bottom: 5%;
+    }
+    .awan2 {
+        width: 100%;
+        bottom: 2%;
+    }
+    .page1-artikel{
+        font-size: 2.4vw;
+    }
+    .page1-quote{
+        font-size: 3.4vw;
+    }
+    .intro .subtitle {
+        font-size: 7vw;
+        margin-left: 0px;
+        margin-top: 16px;
+        letter-spacing: 0.7rem;
+    }
+    section .title {
+        font-size: 5rem;
+    }
+    .awan3{
+        transform: translateY(-28%);
+    }
+    .awan4, .awan5{
+        transform: translateY(-20%);
+    }
+    .awan6 {
+        bottom: -42%;
+        width: 90%;
+        right: -35%;
+    }
+    .awan7 {
+        bottom: -44%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gedung1 {
+        transform: translateY(-25%);
+    }
+    .square1 {
+        transform: translateY(23%);
+    }
+    .awan2 {
+        bottom: 16%;
+    }
+    .awan1 {
+        bottom: 18%;
+    }
+    .intro .subtitle {
+        font-size: 2.3rem;
+        margin-left: 37px;
+    }
+    .page1{
+        margin-top: 3rem;
+    }
+    .page1-quote {
+        right: 1rem;
+    }
+    .intro .subtitle {
+        font-size: 9vw;
+        margin-left: 0px;
+        margin-top: 27px;
+        letter-spacing: 0.7rem;
+    }
+    section .title {
+        font-size: 5rem;
+    }
+    .gedung2 {
+        transform: translate(-24%,-30%);
+        width: 88%;
+    }
+    .page1 {
+        margin-top: -20rem;
+    }
+    .page4 {
+        height: 64vh;
+    }
+    .page4-artikel1, .page4-artikel2 {
+        font-size: 1.6vw;
+    }
+    .page4-title1, .page4-title2 {
+        font-size: 5vw;
+    }
+    .page4-artikel1 {
+        left: 17%;
+    }
+    .page4-artikel2 {
+        left: 11%;
+    }
+    .page4-title1{
+        left: 30%;
+    }
+    .page4-title2 {
+        left: 17%;
+    }
+    .page5 {
+        height: 70vh;
+    }
+    .stars1 {
+        height: 120vh;
+    }
+    .stars2 {
+        height: 100vh;
+    }
+    .stars3 {
+        height: 90vh;
+    }
+    .page6 {
+        height: 56vh;
+    }
+    .page5 {
+        margin-bottom: 14rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #square1{
+        width: 115%;
+    }
+    #gedung1 {
+        width: 110%;
+    }
+    .page2 {
+        height: 50vh;
+    }
+    .gedung2 {
+        width: 61%;
+        height: 38vh;
+        transform: translate(2%,-93%);
+    }
+    .page3-artikel {
+        font-size: 2.2vw;
+        transform: translateY(-35%);
+    }
+    .awan4, .awan5, .awan3 {
+        transform: translateY(-70%);
+    }
+    .page3 {
+        margin-bottom: 1rem;
+    }
+    .page6-artikel1, .page6-artikel2 {
+        font-size: 1.9vw;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page1-quote {
+        bottom: 6rem;
+        right: 1rem;
+    }
+    .page1-artikel {
+        bottom: 6rem;
+    }
+    .page1-title {
+        font-size: 16vw;
+    }
+    .intro .subtitle {
+        font-size: 9vw;
+        margin-left: 0px;
+        margin-top: 27px;
+        letter-spacing: 0.7rem;
+    }
+    section .title {
+        font-size: 5rem;
+    }
+    .gedung2 {
+        width: 71%;
+        height: 38vh;
+        transform: translate(-13%,-104%);
+    }
+    .awan3, .awan4 {
+        width: 83%;
+    }
+    .awan5{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .gedung1 {
+        transform: translateY(-50%);
+    }
+    .square1 {
+        transform: translateY(45%);
+    }
+    .awan2 {
+        bottom: 32%;
+    }
+    .awan1 {
+        bottom: 31%;
+    }
+    .page1 {
+        height: 75vh;
+    }
+    .robot {
+        transform: translateY(-40%);
+    }
+    .page1-title {
+        transform: translateY(-60%);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .gedung1 {
+        transform: translateY(-70%);
+    }
+    .square1 {
+        transform: translateY(65%);
+    }
+    .awan2 {
+        bottom: 33%;
+    }
+    .awan1 {
+        bottom: 33%;
+    }
+    .intro .subtitle {
+        font-size: 9vw;
+        margin-left: 0px;
+        margin-top: 27px;
+        letter-spacing: 0.7rem;
+    }
+    section .title {
+        font-size: 5rem;
+    }
+    .page1 {
+        margin-top: -22rem;
+    }
+    .page2 {
+        height: 35vh;
+    }
+    .awan4, .awan5, .awan3 {
+        transform: translateY(-95%);
+    }
+    .page3-artikel {
+        width: 43%;
+        z-index: 1;
+        line-height: 1.7;
+    }
+    .page4-title1, .page4-title2 {
+        font-size: 6vw;
+    }
+    .page4-artikel1, .page4-artikel2 {
+        font-size: 2vw;
+    }
+    .page4-artikel1{
+        width: 37%;
+    }
+    .page4-artikel2{
+        width: 35%;
+    }
+    .planet1, .planet2, .planet3, .planet4 {
+        width: 20%;
+    }
+    .page5-title1, .page5-title2, .page5-title3, .page5-title4, .page5-title5, .page5-title6 {
+        font-size: 5vw;
+    }
+    .page6 {
+        height: 47vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #layer1 {
+        left: -100%;
+        bottom: -100%;
+        width: 80%;
+        height: 80vh;
+    }
+    #layer2 {
+        left: 100%;
+        bottom: -100%;
+        width: 120%;
+        height: 70vh;
+    }
+    #square1{
+        width: 155%;
+    }
+    #gedung1 {
+        width: 115%;
+    }
+}
