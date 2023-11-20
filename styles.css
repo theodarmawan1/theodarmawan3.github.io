@@ -1569,4 +1569,49 @@ section .title {
     #gedung1 {
         width: 115%;
     }
+    .awan4, .awan5, .awan3 {
+        transform: translateY(-145%);
+    }
+    .dashboard1 {
+        width: 65%;
+    }
+    .dashboard2 {
+        width: 55%;
+        bottom: 10%;
+        left: 18%;
+    }
+    .dashboard3 {
+        width: 43%;
+        bottom: 10%;
+        right: 23%;
+    }
+    .dashboard4 {
+        width: 60%;
+        left: 23%;
+        top: -2%;
+    }
+    .dashboard5 {
+        width: 58%;
+        left: 25%;
+        top: 1%;
+    }
+    .dashboard6 {
+        width: 72%;
+        left: 13%;
+        top: -13%;
+    }
+    .dashboard7 {
+        width: 52.4%;
+        bottom: 6%;
+        left: 27.1%;
+    }
+    .page6-artikel1, .page6-artikel2 {
+        font-size: 2vw;
+    }
+    .page6-title {
+        font-size: 22vw;
+    }
+    .page1 {
+        height: 53vh;
+    }
 }
